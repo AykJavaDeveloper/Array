@@ -8,7 +8,7 @@ public class Main {
 
 
         for (int i = 0; i < certNumbers.length; i++) {
-            certNumbers[i] = 1_000_000 + (int) Math.round(8_999_999 * Math.random());
+            certNumbers[i] = (int) Math.round(1_000_000 + (Math.random() * 8_999_999));
             if (i % winnerRate == 0) {
                 winnerTickets[iteratorForWinnersTeckets] = certNumbers[i];
                 System.out.println("Value winner ticket: " + winnerTickets[iteratorForWinnersTeckets] +
